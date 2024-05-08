@@ -1,0 +1,341 @@
+/*Fonts*/
+
+  @font-face {
+    font-family: "Lemon Milk Light";
+    src: url("Fonts/Lemon\ Milk\ Light.otf");
+    font-weight: normal;
+    font-style: normal;}
+
+    @font-face {
+      font-family: "Montserrat Medium";
+      src: url("Fonts/Montserrat\ Medium.ttf");
+      font-weight: normal;
+      font-style: normal;}
+
+/*General settings*/
+
+  html {
+    scroll-behavior: smooth;
+    width: 100%;}
+
+  body {
+    background-color: white;
+    margin: 0px;}
+
+  p {
+    font-family: "Montserrat Medium";
+    font-size: 1vw;
+    color: black;
+    padding: 0;
+    margin: 0;}
+
+  a {
+    text-decoration: none;
+    font-family: "Montserrat Medium";
+    color: black;}
+
+  a:hover {
+    color: green;}
+
+  h1 {
+    font-family: "Lemon Milk Light";
+    font-size: 2vw;
+    color: green;
+    padding: 0;
+    margin: 0;
+    line-height: 1;}
+
+  h2 {
+    font-family: "Montserrat Medium";
+    font-size: 1vw;
+    color: grey;
+    padding: 0;
+    margin: 0;}
+
+  img {
+    width: 100%;
+    display: block;}
+
+  video {
+    width: 100%;
+    display: block;}
+
+
+
+
+/*Opening*/
+
+  .opening {
+    width: 100%;
+    height: 50vw;
+    background-color: white;}
+/*
+  .language {
+    position: absolute;
+    top: 1.5vw;
+    right: 8.5vw;
+    font-family: "Montserrat Medium";
+    font-size: 1.1vw;
+    color: grey;}
+
+  .name {
+    position: absolute;
+    top: 33.5vw;
+    font-family: "Lemon Milk Light";
+    font-size: 6vw;
+    letter-spacing: 0.07em;
+    color: black;}
+*/
+  .menu {
+    position: absolute;
+    top: 12vw;
+    right: 8.5vw;
+    text-align: right;
+    font-family: "Montserrat Medium";
+    font-size: 3vw;}
+
+  li {
+    list-style-type: none;
+    padding-bottom: 1.5vw;}
+
+
+
+/*About Me*/
+
+  .slide-in {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease-out;}
+
+  .slide-in.visible {
+    transform: translateY(0);
+    opacity: 1;
+    width: 100%;}
+
+  .bio {
+    padding-left: 16.5vw;
+    text-align: justify;
+    font-size: 1.3vw;}
+
+  .skills {
+    display: flex;
+    width: 70%;
+    margin-bottom: 3vw;}
+
+  .skill-icon {
+    background-color: white;
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    margin: auto;}
+  
+  .skill-icon:hover {
+    background-color: green;}
+  
+  .skill-icon .skill-icon-text {
+    visibility: hidden;
+    width: 13.5vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    font-family: "Montserrat Medium";
+    font-size: 1vw;
+    color: black;
+    text-align: start;
+    opacity: 0%;
+    transition: 0.3s;}
+  
+  .skill-icon:hover .skill-icon-text {
+    visibility: visible;
+    opacity: 100%;
+    transition: opacity 0.5s;}
+
+  .progress-container {
+    width: 70%;
+    background-color: lightgray;
+    position: relative;
+    height: 1vw;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    margin-bottom: 0.2vw;}
+
+  .progress-bar {
+    height: 100%;
+    background-color: green;
+    width: 0%;
+    border-radius: 0.5vw;
+    transition: width 2s ease-in-out;
+    position: relative;}
+
+  .progress-container > div:not(.progress-bar) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0.1vw;
+    background-color: white;}
+
+  .progress-container > div:nth-child(2) { left: 20%; }
+  .progress-container > div:nth-child(3) { left: 40%; }
+  .progress-container > div:nth-child(4) { left: 60%; }
+  .progress-container > div:nth-child(5) { left: 80%; }
+
+
+
+/*Portfolio*/
+
+  #portfolio {
+    padding: 0.5208333333333334vw;}
+
+  .portfolio-gallery {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;}
+
+    .column {
+      width: 50%;
+      display: flex;
+      flex-flow: row wrap;}
+
+      .horizontal-work {
+        width: 100%;
+        aspect-ratio: 2 / 1;}
+
+      .square-work {
+        width: 50%;
+        aspect-ratio: 1 / 1;}
+
+      .vertical-work {
+        width: 50%;
+        aspect-ratio: 1 / 2;}
+
+      .square-works-column {
+        width: 50%;}
+
+      .left-square-work {
+        width: 100%;
+        aspect-ratio: 1/1;}
+
+    .work-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;}
+
+
+
+/*Contact*/
+
+  #contact {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vw;
+    padding-bottom: 8vw;
+    padding-left: 20vw;
+    padding-right: 20vw;}
+
+  .images-container {
+    width: 10vw;
+    height: 10vw;
+    background-color: white;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;}
+
+  .images-container img {
+    scroll-snap-align: center;}
+
+  .contact-texts {
+    font-size: 1.5vw;
+    margin: 1vw;}
+
+  .contact-texts:hover {
+    color: green;}
+
+  .social-media-container{
+    display: flex;}
+
+  .social-media {
+    background-color: white;
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw;}
+
+  .social-media:hover {
+    background-color: green;}
+
+
+
+/*Footer*/
+
+  footer {
+    text-align: center;
+    color: grey;
+    padding-top: 2vw;
+    padding-bottom: 1vw;}
+
+
+  
+/*Portfolio pages*/
+
+  .date {
+    color: grey;}
+
+  .esp {
+    color: gray;}
+
+  .work-opening {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4vw;
+    justify-content: space-between;}
+
+    .titles {
+      width: 30%;}
+
+    .descriptions {
+      width: 30%;
+      text-align: justify;
+      text-justify: inter-word;}
+
+  .work-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 4vw;}
+
+    .line1 {
+      width: 30%;
+      padding-bottom: 4vw;}
+
+    .line2 {
+      width: 100%;
+      padding-bottom: 4vw;}
+
+  .work-body-fullscreen {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;}
+
+    .line3 {
+      width: 50%;}
+
+    .line4 {
+      width: 100%;
+      padding-bottom: 4vw;}
+
+    .line5 {
+      width: 20%;
+      padding-left: 40%;
+      padding-right: 40%;
+      padding-bottom: 4vw;}
+
+    .youtube-video {
+      width: 100%;
+      aspect-ratio: 16 / 9;}
