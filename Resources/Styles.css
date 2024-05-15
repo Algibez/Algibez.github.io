@@ -183,9 +183,6 @@
 
 /*Portfolio*/
 
-  #portfolio {
-    padding: 0.5208333333333334vw;}
-
   .portfolio-gallery {
     width: 100%;
     display: flex;
@@ -327,8 +324,7 @@
       width: 50%;}
 
     .line4 {
-      width: 100%;
-      padding-bottom: 4vw;}
+      width: 100%;}
 
     .line5 {
       width: 20%;
@@ -339,3 +335,6 @@
     .youtube-video {
       width: 100%;
       aspect-ratio: 16 / 9;}
+
+  .footer-contact {
+    font-size: 1vw;}
