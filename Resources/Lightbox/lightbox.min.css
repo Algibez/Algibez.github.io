@@ -2,13 +2,13 @@
 
     @font-face {
         font-family: "Lemon Milk Light";
-        src: url("Fonts/Lemon\ Milk\ Light.otf");
+        src: url("../Fonts/Lemon\ Milk\ Light.otf");
         font-weight: normal;
         font-style: normal;}
 
     @font-face {
       font-family: "Montserrat Medium";
-      src: url("Fonts/Montserrat\ Medium.ttf");
+      src: url("../Fonts/Montserrat\ Medium.ttf");
       font-weight: normal;
       font-style: normal;}
 
