@@ -81,14 +81,6 @@
     font-size: 1.1vw;
     color: grey;}
 */
-  .name {
-    position: absolute;
-    top: 77vw;
-    left: 13.8vw;
-    font-family: "Lemon Milk Light";
-    font-size: 6.9vw;
-    letter-spacing: 0.08em;
-    color: green;}
 
   .menu {
     position: absolute;
@@ -116,10 +108,19 @@
     opacity: 1;
     width: 100%;}
 
+  .name {
+    position: absolute;
+    top: 79vw;
+    left: 13.8vw;
+    font-family: "Lemon Milk Light";
+    font-size: 6.9vw;
+    letter-spacing: 0.08em;
+    color: green;}
+
   .bio {
     padding-left: 16.5vw;
     text-align: justify;
-    font-size: 1.3vw;}
+    font-size: 1.1vw;}
 
   .skills {
     display: flex;
@@ -161,7 +162,7 @@
     height: 1vw;
     border-radius: 0.5vw;
     overflow: hidden;
-    margin-bottom: 0.2vw;}
+    margin-bottom: 0.3vw;}
 
   .progress-bar {
     height: 100%;
