@@ -72,15 +72,14 @@
     width: 100%;
     height: 41vw;
     background-color: white;}
-/*
-  .language {
+
+  .version {
     position: absolute;
     top: 1.5vw;
     right: 8.5vw;
     font-family: "Montserrat Medium";
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     color: grey;}
-*/
 
   .menu {
     position: absolute;
