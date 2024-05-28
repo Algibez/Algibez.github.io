@@ -70,7 +70,6 @@
 
   .opening {
     width: 100%;
-    height: 41vw;
     background-color: white;}
 
   .version {
@@ -109,7 +108,7 @@
 
   .name {
     position: absolute;
-    top: 38vw;
+    top: 37vw;
     left: 13.3vw;
     font-family: "Lemon Milk Light";
     font-size: 8.36vw;
