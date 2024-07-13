@@ -291,7 +291,8 @@
 					</div>-->
 			</section>
 <!--Portfolio-->
-			<section>
+			<section class="p-portfolio">
+
 					<a href="Pages/Poema.html">
 						<video class="work-video" src="Resources/Portfolio/Poema/Poema - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
 					</a>
@@ -303,6 +304,45 @@
 					<a href="Pages/ScrubMommy.html">
 						<video class="work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
 					</a>
+
+					<button onclick="Load1()" id="loadbutton1">Load More</button>
+
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work4" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work5" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work6" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+
+					<button onclick="Load2()" id="loadbutton2">Load More</button>
+
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work7" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work8" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+					<a  href="Pages/ScrubMommy.html">
+						<video id="work9" class="hidden-work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+
+					<script>
+						function Load1() {
+							document.getElementById('loadbutton1').style.display = 'none';
+							document.getElementById('work4').style.display = 'block';
+							document.getElementById('work5').style.display = 'block';
+							document.getElementById('work6').style.display = 'block';
+							document.getElementById('loadbutton2').style.display = 'block';}
+	
+						function Load2() {
+							document.getElementById('loadbutton2').style.display = 'none';
+							document.getElementById('work7').style.display = 'block';
+							document.getElementById('work8').style.display = 'block';
+							document.getElementById('work9').style.display = 'block';}
+					</script> 
 			</section>
 <!--Contact-->
 			<section class="p-contact">
