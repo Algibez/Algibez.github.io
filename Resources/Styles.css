@@ -1,13 +1,14 @@
-.phone {
-  display: none;}
+/*Hidding mechanism*/
 
-@media screen and (orientation: portrait) {
-  .desktop {
-    display: none;}
-  
   .phone {
-    display: block;}}
+    display: none;}
 
+  @media screen and (orientation: portrait) {
+    .desktop {
+      display: none;}
+    
+    .phone {
+      display: block;}}
 
 
 
@@ -398,26 +399,20 @@
 
 /*Phone Version*/
 
-  /*Hidding mechanism*/
-
-
-
-
-
   /*About Me*/
 
     .p-h1 {
-      font-size: 20vw;
-      margin-top: 10vw;
-      margin-left: 10vw;}
+      font-size: 8vw;
+      margin-left: 2vw;}
 
     .p-bio {
-      width: 150vw;
-      margin-top: 10vw;
-      margin-left: 10vw;}
+      width: 70%;
+      margin-top: 5vw;
+      margin-left: 2vw;
+      margin-bottom: 5vw;}
 
     .p-copy {
-      font-size: 10vw;}
+      font-size: 4vw;}
 /*
 
       .p-skills {
@@ -460,23 +455,22 @@
 
     .p-contact {
       text-align: center;
-      margin-top: 30vw;
-      margin-bottom: 30vw;}
+      margin-top: 20vw;
+      margin-bottom: 5vw;}
   
     .p-contact-info {
-      font-size: 12vw;}
+      font-size: 4vw;}
 
     .p-social-media-container{
       display: flex;
       flex-flow: row wrap;
-      margin-left: 35vw;
-      margin-right: 35vw;}
+      justify-content: center;}
   
     .p-social-media {
       background-color: white;
-      width: 25vw;
-      height: 25vw;
-      margin: auto;}
+      width: 8vw;
+      height: 8vw;
+      margin: 7vw;}
   
     .p-social-media:hover {
       background-color: green;}
@@ -486,6 +480,6 @@
   /*Footer*/
 
     .p-footer {
-      font-size: 10vw;
-      margin-bottom: 5vw;
-      margin-top: 5vw;}
+      font-size: 3vw;
+      margin-bottom: 1vw;
+      margin-top: 1vw;}
