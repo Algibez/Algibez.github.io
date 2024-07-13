@@ -9,247 +9,328 @@
       	<meta name="keywords" content="Creativity, Advertising, Copywriting, Art Direction, Grafic Design, Motion Graphics, Fotography, Web Design, Game Development">
 	</head>
 	<body>
+		<div class="desktop">
 <!--Opening-->
-	    <section class="opening">
-				<img src="Resources/Waiting Chango.gif" alt="A monkey on a suit waits leaning on a car as the wind moves his clothes."/>
-                <p class="version">v. 1.5.2</p>
-                <ul class="menu">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-        </section>
+			<section class="opening">
+					<img src="Resources/Waiting Chango.gif" alt="A monkey on a suit waits leaning on a car as the wind moves his clothes."/>
+					<p class="version">v. 1.7.4</p>
+					<ul class="menu">
+						<li><a href="#about-me">About Me</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+			</section>
 <!--About Me-->
-		<section id="about-me">
-			<table class="slide-in">
-				<tr>
-					<td width="35%">
-						<p class="bio">
+			<section id="about-me">
+				<table class="slide-in">
+					<tr>
+						<td width="35%">
+							<p class="bio">
+								I am a creative trained in advertising with a passion for the world of videogames.
+								<br>
+								I'm always looking for new challenges that take me out of my comfort zone, because having nothing to do kills me with boredom.
+							</p>
+						</td>
+						<td width="30%">
+							<h1 class="name">Jaime&nbsp; Algibez</h1>
+							<img src="Resources/About/Self portrait.jpg" alt="Jaime Algibez self portrait, he is wearing all black and holding the camera."/>
+						</td>
+						<td width="35%">
+							<div class="skills">
+								<div class="skill-icon">
+										<img src="Resources/About/Skills/adobe-skills.png" alt="The Adobe logo."/>
+											<span class="skill-icon-text">I am proficient in Photoshop, Camera Raw, Illustrator, Indesign, Premier and After Effects.</span>
+								</div>
+								<div class="skill-icon">
+										<img src="Resources/About/Skills/copywriting-skills.png" alt="A caligraphic pen icon."/>
+											<span class="skill-icon-text">My reading habits helped me develop an intuition for copywriting.</span>
+								</div>
+								<div class="skill-icon">
+										<img src="Resources/About/Skills/photography-skills.png" alt="A camera icon."/>
+											<span class="skill-icon-text">Photography allows me to tell stories in an instant, through a digital or analogue canvas.</span>
+								</div>
+								<div class="skill-icon">
+										<img src="Resources/About/Skills/programing-skills.png" alt="A coding icon."/>
+											<span class="skill-icon-text">I found so much creativity in coding that I had to try it myself, so I learnt HTML and CSS. Currently I'm learning Java.</span>
+								</div>
+							</div>
+							<p>Problem solving</p>
+								<div class="progress-container" id="progress1">
+									<div class="progress-bar"></div>
+									<div></div><div></div><div></div><div></div>
+								</div>
+							<p class="stats">Creative thinking</p>
+								<div class="progress-container" id="progress2">
+									<div class="progress-bar"></div>
+									<div></div><div></div><div></div><div></div>
+								</div>
+							<p class="stats">Organization</p>
+								<div class="progress-container" id="progress3">
+									<div class="progress-bar"></div>
+									<div></div><div></div><div></div><div></div>
+								</div>
+							<p class="stats">Comunication</p>
+							<div class="progress-container" id="progress4">
+								<div class="progress-bar"></div>
+								<div></div><div></div><div></div><div></div>
+							</div>
+							<script>
+								document.addEventListener('DOMContentLoaded', (event) => {
+								let observer = new IntersectionObserver((entries, observer) => { 
+									entries.forEach(entry => {
+									if(entry.isIntersecting){
+										let progressBar = entry.target.querySelector('.progress-bar');
+										switch(entry.target.id){
+										case 'progress1':
+											progressBar.style.width = '100%';
+											break;
+										case 'progress2':
+											progressBar.style.width = '80%';
+											break;
+										case 'progress3':
+											progressBar.style.width = '100%';
+											break;
+										case 'progress4':
+											progressBar.style.width = '70%';
+											break;
+										}
+										observer.unobserve(entry.target);
+									}
+									});
+								}, { threshold: 1.0 });
+							
+								document.querySelectorAll('.progress-container').forEach(container => {
+									observer.observe(container);
+								});
+								});
+							</script>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<script>
+				document.addEventListener('DOMContentLoaded', (event) => {
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+					}
+					});
+				}, {
+					threshold: 0.5 // Adjust if needed
+				});
+			
+				const table = document.querySelector('.slide-in');
+				observer.observe(table);
+				});
+			</script>
+<!--Portfolio-->
+			<section id="portfolio">
+				<div class="portfolio-gallery">
+					<div class="column">
+						<div class="horizontal-work">
+							<a href="Pages/MidnightSnack.html">
+								<video class="work-video" src="Resources/Portfolio/Midnight Snack/Midnight Snack - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Videogame developed during and winer of the UEM Dreamjam 2024."></video>
+							</a>
+						</div>
+						<div class="square-work">
+							<a href="Pages/Poema.html">
+								<video class="work-video" src="Resources/Portfolio/Poema/Poema - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Advertisement for the Red Cross."></video>
+							</a>
+						</div>
+						<div class="square-work">
+							<a href="Pages/WWWBWD.html">
+								<video class="work-video" src="Resources/Portfolio/WWWBWD/WWWBWD - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Print graphic campaign for the new sizes of the SAKURA Pigma Micorn pens."></video>
+							</a>
+						</div>
+						<div class="square-work">
+							<a href="Pages/ScrubMommy.html">
+								<video class="work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Packaging design for Scrub Mommy, Premium Wonder Wash up, and Magic Multisurface Cleaner."></video>
+							</a>
+						</div>
+						<div class="square-work">
+							<a href="Pages/PlayinHell.html">
+								<video class="work-video" src="Resources/Portfolio/Play in Hell/Play in Hell - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+							</a>
+						</div>
+					</div>
+					<div class="column">
+						<div class="vertical-work">
+							<a href="Pages/ProximaestacionIKEA.html">
+								<video class="work-video" src="Resources/Portfolio/Próxima estación IKEA/Próxima estación IKEA - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Exterior graphic campaign for the new IKEA shop in Madrid."></video>
+							</a>
+						</div>
+						<div class="square-works-column">
+							<div class="left-square-work">
+								<a href="Pages/LaVeladaSobrada.html">
+									<video class="work-video" src="Resources/Portfolio/La Velada Sobrada/La Velada Sobrada - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Notoriety action to make KFC even more relevant among the youth."></video>
+								</a>
+							</div>
+							<div class="left-square-work">
+								<a href="Pages/TheHumanHarmony.html">
+									<video class="work-video" src="Resources/Portfolio/The Human Harmony/The Human Harmony - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Visual identity for Eurovision 2025."></video>
+								</a>
+							</div>
+						</div>
+						<div class="horizontal-work">
+							<a href="Pages/Miscellany.html">
+								<video class="work-video" src="Resources/Portfolio/Miscellany/Miscellany - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Mainly photographs made by Jaime Algibez and some pieces of other disciplines."></video>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+<!--Contact--> 
+			<section id="contact">
+				<div class="images-container">
+					<img id="mail-image" src="Resources/Contact/mail-image.png" alt="A card icon."/>
+					<img id="number-image" src="Resources/Contact/number-image.png" alt="A phone icon."/>
+					<img id="linkedin-image" src="Resources/Contact/linkedin-logo.png" alt="The Linkedin logo."/>
+					<img id="behance-image" src="Resources/Contact/behance-logo.png" alt="The Behance logo."/>
+					<img id="instagram-image" src="Resources/Contact/instagram-logo.png" alt="The Instagram logo."/>
+				</div>
+				<div class="content-container">
+					<div class="text-list">
+						<a href="#mail-image">
+							<p id="mail-link" class="contact-texts">
+								&nbsp;jaime.algibez@gmail.com
+							</p>
+						</a>
+						<a href="#number-image" >
+							<p class="contact-texts">
+								+34 606 915 887
+							</p>
+						</a>
+						<div class="social-media-container">
+							<div class="social-media">
+								<a href="#linkedin-image">
+									<img id="linkedin-link" src="Resources/Contact/linkedin-logo.png" alt="The Linkedin logo."/>
+								</a>
+							</div>
+							<div class="social-media">
+								<a href="#behance-image">
+									<img id="behance-link" src="Resources/Contact/behance-logo.png" alt="The Behance logo."/>
+								</a>
+							</div>
+							<div class="social-media">
+								<a href="#instagram-image">
+									<img id="instagram-link" src="Resources/Contact/instagram-logo.png" alt="The Instagram logo."/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<script>
+				const contentContainer = document.querySelector('.content-container');
+
+				contentContainer.addEventListener('mouseover', (e) => {
+					const target = e.target.closest('a');
+
+						if (!target) return;
+
+						const imageId = target.getAttribute('href').slice(1);
+						const image = document.getElementById(imageId);
+						image.scrollIntoView({ behavior: 'smooth' });
+					});
+
+
+				document.getElementById("mail-link").addEventListener("click",function(){
+					window.open('mailto:jaime.algibez@gmail.com', '_blank');
+						})
+				document.getElementById("linkedin-link").addEventListener("click",function(){
+					window.open('https://www.linkedin.com/in/jaimealgibez/', '_blank');
+						})
+				document.getElementById("behance-link").addEventListener("click",function(){
+					window.open('https://www.behance.net/jaimeha', '_blank');
+						})
+				document.getElementById("instagram-link").addEventListener("click",function(){
+					window.open('https://www.instagram.com/jaimenumeros/', '_blank');
+						})
+			</script>
+<!--Footer-->
+			<footer>
+				<p class="footer">Designed and programmed by Jaime Algibez</p>
+			</footer>
+		</div>
+
+
+
+<!--Phone Version-->
+
+<!--About Me-->
+		<div class="phone">
+			<section>
+				<img src="Resources/Waiting Chango.gif" alt="A monkey on a suit waits leaning on a car as the wind moves his clothes, next to him its Jaime Algibez."/>
+				<h1 class="p-h1">JAIME ALGIBEZ</h1>
+					<div class="p-bio">
+						<p class="p-copy">
 							I am a creative trained in advertising with a passion for the world of videogames.
 							<br>
 							I'm always looking for new challenges that take me out of my comfort zone, because having nothing to do kills me with boredom.
 						</p>
-					</td>
-					<td width="30%">
-						<h1 class="name">Jaime&nbsp; Algibez</h1>
-						<img src="Resources/About/Self portrait.jpg" alt="Jaime Algibez self portrait, he is wearing all black and holding the camera."/>
-					</td>
-					<td width="35%">
-						<div class="skills">
-							<div class="skill-icon">
-									<img src="Resources/About/Skills/adobe-skills.png" alt="The Adobe logo."/>
-										<span class="skill-icon-text">I am proficient in Photoshop, Camera Raw, Illustrator, Indesign, Premier and After Effects.</span>
-							</div>
-							<div class="skill-icon">
-									<img src="Resources/About/Skills/copywriting-skills.png" alt="A caligraphic pen icon."/>
-										<span class="skill-icon-text">My reading habits helped me develop an intuition for copywriting.</span>
-							</div>
-							<div class="skill-icon">
-									<img src="Resources/About/Skills/photography-skills.png" alt="A camera icon."/>
-										<span class="skill-icon-text">Photography allows me to tell stories in an instant, through a digital or analogue canvas.</span>
-							</div>
-							<div class="skill-icon">
-									<img src="Resources/About/Skills/programing-skills.png" alt="A coding icon."/>
-										<span class="skill-icon-text">I found so much creativity in coding that I had to try it myself so I learnt HTML and CSS. Currently I'm learning Java.</span>
-							</div>
+					</div>
+					<!--
+					<div class="p-skills">
+						<div class="p-skill-icon">
+								<img src="Resources/About/Skills/adobe-skills.png" alt="The Adobe logo."/>
+									<span class="p-skill-icon-text">I am proficient in Photoshop, Camera Raw, Illustrator, Indesign, Premier and After Effects.</span>
 						</div>
-						<p>Problem solving</p>
-							<div class="progress-container" id="progress1">
-								<div class="progress-bar"></div>
-								<div></div><div></div><div></div><div></div>
-  							</div>
-						<p class="stats">Creative thinking</p>
-							<div class="progress-container" id="progress2">
-								<div class="progress-bar"></div>
-								<div></div><div></div><div></div><div></div>
-							</div>
-  						<p class="stats">Organization</p>
-							<div class="progress-container" id="progress3">
-								<div class="progress-bar"></div>
-								<div></div><div></div><div></div><div></div>
-							</div>
-						<p class="stats">Comunication</p>
-						<div class="progress-container" id="progress4">
-							<div class="progress-bar"></div>
-							<div></div><div></div><div></div><div></div>
+						<div class="p-skill-icon">
+								<img src="Resources/About/Skills/copywriting-skills.png" alt="A caligraphic pen icon."/>
+									<span class="p-skill-icon-text">My reading habits helped me develop an intuition for copywriting.</span>
 						</div>
-						<script>
-							document.addEventListener('DOMContentLoaded', (event) => {
-							let observer = new IntersectionObserver((entries, observer) => { 
-								entries.forEach(entry => {
-								if(entry.isIntersecting){
-									let progressBar = entry.target.querySelector('.progress-bar');
-									switch(entry.target.id){
-									case 'progress1':
-										progressBar.style.width = '100%';
-										break;
-									case 'progress2':
-										progressBar.style.width = '80%';
-										break;
-									case 'progress3':
-										progressBar.style.width = '100%';
-										break;
-									case 'progress4':
-										progressBar.style.width = '70%';
-										break;
-									}
-									observer.unobserve(entry.target);
-								}
-								});
-							}, { threshold: 1.0 });
-						
-							document.querySelectorAll('.progress-container').forEach(container => {
-								observer.observe(container);
-							});
-							});
-						</script>
-					</td>
-				</tr>
-			</table>
-		</section>
-		<script>
-			document.addEventListener('DOMContentLoaded', (event) => {
-			  const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-				  if (entry.isIntersecting) {
-					entry.target.classList.add('visible');
-				  }
-				});
-			  }, {
-				threshold: 0.5 // Adjust if needed
-			  });
-		  
-			  const table = document.querySelector('.slide-in');
-			  observer.observe(table);
-			});
-		</script>
+						<div class="p-skill-icon">
+								<img src="Resources/About/Skills/photography-skills.png" alt="A camera icon."/>
+									<span class="p-skill-icon-text">Photography allows me to tell stories in an instant, through a digital or analogue canvas.</span>
+						</div>
+						<div class="p-skill-icon">
+								<img src="Resources/About/Skills/programing-skills.png" alt="A coding icon."/>
+									<span class="p-skill-icon-text">I found so much creativity in coding that I had to try it myself, so I learnt HTML and CSS. Currently I'm learning Java.</span>
+						</div>
+					</div>-->
+			</section>
 <!--Portfolio-->
-		<section id="portfolio">
-			<div class="portfolio-gallery">
-				<div class="column">
-					<div class="horizontal-work">
-						<a href="Pages/MidnightSnack.html">
-							<video class="work-video" src="Resources/Portfolio/Midnight Snack/Midnight Snack - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Videogame developed during and winer of the UEM Dreamjam 2024."></video>
-						</a>
-					</div>
-					<div class="square-work">
-						<a href="Pages/Poema.html">
-							<video class="work-video" src="Resources/Portfolio/Poema/Poema - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Advertisement for the Red Cross."></video>
-						</a>
-					</div>
-					<div class="square-work">
-						<a href="Pages/WWWBWD.html">
-							<video class="work-video" src="Resources/Portfolio/WWWBWD/WWWBWD - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Print graphic campaign for the new sizes of the SAKURA Pigma Micorn pens."></video>
-						</a>
-					</div>
-					<div class="square-work">
-						<a href="Pages/ScrubMommy.html">
-							<video class="work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Packaging design for Scrub Mommy, Premium Wonder Wash up, and Magic Multisurface Cleaner."></video>
-						</a>
-					</div>
-					<div class="square-work">
-						<a href="Pages/PlayinHell.html">
-							<video class="work-video" src="Resources/Portfolio/Play in Hell/Play in Hell - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
-						</a>
-					</div>
-				</div>
-				<div class="column">
-					<div class="vertical-work">
-						<a href="Pages/ProximaestacionIKEA.html">
-							<video class="work-video" src="Resources/Portfolio/Próxima estación IKEA/Próxima estación IKEA - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Exterior graphic campaign for the new IKEA shop in Madrid."></video>
-						</a>
-					</div>
-					<div class="square-works-column">
-						<div class="left-square-work">
-							<a href="Pages/LaVeladaSobrada.html">
-								<video class="work-video" src="Resources/Portfolio/La Velada Sobrada/La Velada Sobrada - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Notoriety action to make KFC even more relevant among the youth."></video>
-							</a>
-						</div>
-						<div class="left-square-work">
-							<a href="Pages/TheHumanHarmony.html">
-								<video class="work-video" src="Resources/Portfolio/The Human Harmony/The Human Harmony - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Visual identity for Eurovision 2025."></video>
-							</a>
-						</div>
-					</div>
-					<div class="horizontal-work">
-						<a href="Pages/Miscellany.html">
-							<video class="work-video" src="Resources/Portfolio/Miscellany/Miscellany - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Mainly photographs made by Jaime Algibez and some pieces of other disciplines."></video>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-<!--Contact--> 
-		<section id="contact">
-			<div class="images-container">
-				<img id="mail-image" src="Resources/Contact/mail-image.png" alt="A card icon."/>
-				<img id="number-image" src="Resources/Contact/number-image.png" alt="A phone icon."/>
-				<img id="linkedin-image" src="Resources/Contact/linkedin-logo.png" alt="The Linkedin logo."/>
-				<img id="behance-image" src="Resources/Contact/behance-logo.png" alt="The Behance logo."/>
-				<img id="instagram-image" src="Resources/Contact/instagram-logo.png" alt="The Instagram logo."/>
-			</div>
-			<div class="content-container">
-				<div class="text-list">
-					<a href="#mail-image">
-						<p id="mail-link" class="contact-texts">
-							&nbsp;jaime.algibez@gmail.com
-						</p>
+			<section>
+					<a href="Pages/Poema.html">
+						<video class="work-video" src="Resources/Portfolio/Poema/Poema - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
 					</a>
-					<a href="#number-image" >
-						<p class="contact-texts">
-							+34 606 915 887
-						</p>
+
+					<a href="Pages/TheHumanHarmony.html">
+						<video class="work-video" src="Resources/Portfolio/The Human Harmony/The Human Harmony - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
 					</a>
-					<div class="social-media-container">
-						<div class="social-media">
-							<a href="#linkedin-image">
-								<img id="linkedin-link" src="Resources/Contact/linkedin-logo.png" alt="The Linkedin logo."/>
-							</a>
-						</div>
-						<div class="social-media">
-							<a href="#behance-image">
-								<img id="behance-link" src="Resources/Contact/behance-logo.png" alt="The Behance logo."/>
-							</a>
-						</div>
-						<div class="social-media">
-							<a href="#instagram-image">
-								<img id="instagram-link" src="Resources/Contact/instagram-logo.png" alt="The Instagram logo."/>
-							</a>
-						</div>
+
+					<a href="Pages/ScrubMommy.html">
+						<video class="work-video" src="Resources/Portfolio/Scrub Mommy/Scrub Mommy - Cover.mp4" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" alt="Launch action for Diablo IV."></video>
+					</a>
+			</section>
+<!--Contact-->
+			<section class="p-contact">
+				<a class="p-contact-info" href="mailto:jaime.algibez@gmail.com" target="_blank">jaime.algibez@gmail.com</a>
+					<br><br>
+				<a class="p-contact-info">+34 606 915 887</a>
+					<br><br><br><br>
+				<div class="p-social-media-container">
+					<div class="p-social-media">
+						<a href="https://www.linkedin.com/in/jaimealgibez/" target="_blank">
+							<img src="Resources/Contact/linkedin-logo.png" alt="The Linkedin logo."/></a>
+					</div>
+					<div class="p-social-media">
+						<a href="https://www.behance.net/jaimeha" target="_blank">
+							<img src="Resources/Contact/behance-logo.png" alt="The Behance logo."/>
+						</a>
+					</div>
+					<div class="p-social-media">
+						<a href="https://www.instagram.com/jaimenumeros/" target="_blank">
+							<img src="Resources/Contact/instagram-logo.png" alt="The Instagram logo."/>
+						</a>
 					</div>
 				</div>
-			</div>
-		</section>
-		<script>
-			const contentContainer = document.querySelector('.content-container');
-
-			contentContainer.addEventListener('mouseover', (e) => {
-				const target = e.target.closest('a');
-
-					if (!target) return;
-
-					const imageId = target.getAttribute('href').slice(1);
-					const image = document.getElementById(imageId);
-					image.scrollIntoView({ behavior: 'smooth' });
-				});
-
-
-			document.getElementById("mail-link").addEventListener("click",function(){
-				window.open('mailto:jaime.algibez@gmail.com', '_blank');
-					})
-			document.getElementById("linkedin-link").addEventListener("click",function(){
-				window.open('https://www.linkedin.com/in/jaimealgibez/', '_blank');
-					})
-			document.getElementById("behance-link").addEventListener("click",function(){
-				window.open('https://www.behance.net/jaimeha', '_blank');
-					})
-			document.getElementById("instagram-link").addEventListener("click",function(){
-				window.open('https://www.instagram.com/jaimenumeros/', '_blank');
-					})
-		</script>
+			</section>
 <!--Footer-->
-		<footer>
-			<p>Designed and programmed by Jaime Algibez.</p>
-		</footer>
+			<footer>
+				<p class="p-footer">Designed and programed by Jaime Algibez</p>
+			</footer>
+		</div>
 	</body>
 </html>

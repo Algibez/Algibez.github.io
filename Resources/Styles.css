@@ -67,314 +67,420 @@
 
 
 
-/*Opening*/
+/*Desktop*/
 
-  .opening {
-    width: 100%;
-    background-color: white;}
+  /*Opening*/
 
-  .version {
-    position: absolute;
-    top: 1.5vw;
-    right: 8.5vw;
-    font-family: "Montserrat Medium";
-    font-size: 1.2vw;
-    color: grey;}
-
-  .menu {
-    position: absolute;
-    top: 12vw;
-    right: 8.5vw;
-    text-align: right;
-    font-family: "Montserrat Medium";
-    font-size: 3vw;}
-
-  li {
-    list-style-type: none;
-    padding-bottom: 1.5vw;}
-
-
-
-/*About Me*/
-
-  .slide-in {
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.5s ease-out;}
-
-  .slide-in.visible {
-    transform: translateY(0);
-    opacity: 1;
-    width: 100%;}
-
-  .name {
-    position: absolute;
-    top: 37vw;
-    left: 13.3vw;
-    font-family: "Lemon Milk Light";
-    font-size: 8.36vw;
-    letter-spacing: 0.08em;
-    color: green;
-    z-index: 4;}
-
-  .bio {
-    padding-left: 16.5vw;
-    text-align: left;
-    font-size: 1.1vw;}
-
-  .skills {
-    display: flex;
-    width: 70%;
-    margin-bottom: 3vw;}
-
-  .skill-icon {
-    background-color: white;
-    position: relative;
-    width: 3vw;
-    height: 3vw;
-    margin: auto;}
-  
-  .skill-icon:hover {
-    background-color: green;}
-  
-  .skill-icon .skill-icon-text {
-    visibility: hidden;
-    width: 13.5vw;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    font-family: "Montserrat Medium";
-    font-size: 1vw;
-    color: black;
-    text-align: start;
-    opacity: 0%;
-    transition: 0.3s;}
-  
-  .skill-icon:hover .skill-icon-text {
-    visibility: visible;
-    opacity: 100%;
-    transition: opacity 0.5s;}
-
-  .stats {
-    padding-top: 0.7vw;}
-
-  .progress-container {
-    width: 70%;
-    background-color: lightgray;
-    position: relative;
-    height: 1vw;
-    border-radius: 0.5vw;
-    overflow: hidden;
-    margin-bottom: 0.3vw;}
-
-  .progress-bar {
-    height: 100%;
-    background-color: green;
-    width: 0%;
-    border-radius: 0.5vw;
-    transition: width 2s ease-in-out;
-    position: relative;}
-
-  .progress-container > div:not(.progress-bar) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 0.1vw;
-    background-color: white;}
-
-  .progress-container > div:nth-child(2) { left: 20%; }
-  .progress-container > div:nth-child(3) { left: 40%; }
-  .progress-container > div:nth-child(4) { left: 60%; }
-  .progress-container > div:nth-child(5) { left: 80%; }
-
-
-
-/*Portfolio*/
-
-  .portfolio-gallery {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;}
-
-    .column {
-      width: 50%;
-      display: flex;
-      flex-flow: row wrap;}
-
-      .horizontal-work {
-        width: 100%;
-        aspect-ratio: 2 / 1;}
-
-      .square-work {
-        width: 50%;
-        aspect-ratio: 1 / 1;}
-
-      .vertical-work {
-        width: 50%;
-        aspect-ratio: 1 / 2;}
-
-      .square-works-column {
-        width: 50%;}
-
-      .left-square-work {
-        width: 100%;
-        aspect-ratio: 1/1;}
-
-    .work-video {
+    .opening {
       width: 100%;
-      height: 100%;
-      object-fit: cover;}
+      background-color: white;}
+
+    .version {
+      position: absolute;
+      top: 1.5vw;
+      right: 8.5vw;
+      font-family: "Montserrat Medium";
+      font-size: 1.2vw;
+      color: grey;}
+
+    .menu {
+      position: absolute;
+      top: 12vw;
+      right: 8.5vw;
+      text-align: right;
+      font-family: "Montserrat Medium";
+      font-size: 3vw;}
+
+    li {
+      list-style-type: none;
+      padding-bottom: 1.5vw;}
 
 
 
-/*Contact*/
+  /*About Me*/
 
-  #contact {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10vw;
-    padding-bottom: 8vw;
-    padding-left: 20vw;
-    padding-right: 20vw;}
+    .slide-in {
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.5s ease-out;}
 
-  .images-container {
-    width: 10vw;
-    height: 10vw;
-    background-color: white;
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    overflow: hidden;}
-
-  .images-container img {
-    scroll-snap-align: center;}
-
-  .contact-texts {
-    font-size: 1.5vw;
-    margin: 1vw;}
-
-  .contact-texts:hover {
-    color: green;}
-
-  .social-media-container{
-    display: flex;}
-
-  .social-media {
-    background-color: white;
-    width: 3vw;
-    height: 3vw;
-    margin: 1vw;}
-
-  .social-media:hover {
-    background-color: green;}
-
-
-
-/*Footer*/
-
-  footer {
-    text-align: center;
-    color: grey;
-    padding-top: 1vw;
-    padding-bottom: 1vw;}
-
-
-  
-/*Portfolio pages*/
-
-  .date {
-    color: grey;}
-
-  .esp {
-    color: gray;}
-
-  .work-opening {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 4vw;
-    justify-content: space-between;}
-
-    .titles {
-      width: 30%;}
-
-    .descriptions {
-      width: 30%;
-      text-align: justify;
-      text-justify: inter-word;}
-
-  .work-body {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding-left: 4vw;
-    padding-right: 4vw;}
-
-    .line1 {
-      width: 30%;
-      padding-bottom: 4vw;}
-
-    .line2 {
-      width: 100%;
-      padding-bottom: 4vw;}
-
-  .work-body-fullscreen {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;}
-
-    .line3 {
-      width: 50%;}
-
-    .line4 {
+    .slide-in.visible {
+      transform: translateY(0);
+      opacity: 1;
       width: 100%;}
 
-    .line5 {
-      width: 20%;
-      padding-left: 40%;
-      padding-right: 40%;
+    .name {
+      position: absolute;
+      top: 37vw;
+      left: 13.3vw;
+      font-family: "Lemon Milk Light";
+      font-size: 8.36vw;
+      letter-spacing: 0.08em;
+      color: green;
+      z-index: 4;}
+
+    .bio {
+      padding-left: 16.5vw;
+      text-align: left;
+      font-size: 1.1vw;}
+
+    .skills {
+      display: flex;
+      width: 70%;
+      margin-bottom: 3vw;}
+
+    .skill-icon {
+      background-color: white;
+      position: relative;
+      width: 3vw;
+      height: 3vw;
+      margin: auto;}
+    
+    .skill-icon:hover {
+      background-color: green;}
+    
+    .skill-icon .skill-icon-text {
+      visibility: hidden;
+      width: 13.5vw;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      font-family: "Montserrat Medium";
+      font-size: 1vw;
+      color: black;
+      text-align: start;
+      opacity: 0%;
+      transition: 0.3s;}
+    
+    .skill-icon:hover .skill-icon-text {
+      visibility: visible;
+      opacity: 100%;
+      transition: opacity 0.5s;}
+
+    .stats {
+      padding-top: 0.7vw;}
+
+    .progress-container {
+      width: 70%;
+      background-color: lightgray;
+      position: relative;
+      height: 1vw;
+      border-radius: 0.5vw;
+      overflow: hidden;
+      margin-bottom: 0.3vw;}
+
+    .progress-bar {
+      height: 100%;
+      background-color: green;
+      width: 0%;
+      border-radius: 0.5vw;
+      transition: width 2s ease-in-out;
+      position: relative;}
+
+    .progress-container > div:not(.progress-bar) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0.1vw;
+      background-color: white;}
+
+    .progress-container > div:nth-child(2) { left: 20%; }
+    .progress-container > div:nth-child(3) { left: 40%; }
+    .progress-container > div:nth-child(4) { left: 60%; }
+    .progress-container > div:nth-child(5) { left: 80%; }
+
+
+
+  /*Portfolio*/
+
+    .portfolio-gallery {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;}
+
+      .column {
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;}
+
+        .horizontal-work {
+          width: 100%;
+          aspect-ratio: 2 / 1;}
+
+        .square-work {
+          width: 50%;
+          aspect-ratio: 1 / 1;}
+
+        .vertical-work {
+          width: 50%;
+          aspect-ratio: 1 / 2;}
+
+        .square-works-column {
+          width: 50%;}
+
+        .left-square-work {
+          width: 100%;
+          aspect-ratio: 1/1;}
+
+      .work-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;}
+
+
+
+  /*Contact*/
+
+    #contact {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10vw;
+      padding-bottom: 8vw;
+      padding-left: 20vw;
+      padding-right: 20vw;}
+
+    .images-container {
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      overflow: hidden;}
+
+    .images-container img {
+      scroll-snap-align: center;}
+
+    .contact-texts {
+      font-size: 1.5vw;
+      margin: 1vw;}
+
+    .contact-texts:hover {
+      color: green;}
+
+    .social-media-container{
+      display: flex;}
+
+    .social-media {
+      background-color: white;
+      width: 3vw;
+      height: 3vw;
+      margin: 1vw;}
+
+    .social-media:hover {
+      background-color: green;}
+
+
+
+  /*Footer*/
+
+    footer {
+      text-align: center;
+      color: grey;
+      padding-top: 1vw;
+      padding-bottom: 1vw;}
+
+
+    
+  /*Portfolio pages*/
+
+    .date {
+      color: grey;}
+
+    .esp {
+      color: gray;}
+
+    .work-opening {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 4vw;
+      justify-content: space-between;}
+
+      .titles {
+        width: 30%;}
+
+      .descriptions {
+        width: 30%;
+        text-align: justify;
+        text-justify: inter-word;}
+
+    .work-body {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding-left: 4vw;
+      padding-right: 4vw;}
+
+      .line1 {
+        width: 30%;
+        padding-bottom: 4vw;}
+
+      .line2 {
+        width: 100%;
+        padding-bottom: 4vw;}
+
+    .work-body-fullscreen {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;}
+
+      .line3 {
+        width: 50%;}
+
+      .line4 {
+        width: 100%;}
+
+      .line5 {
+        width: 20%;
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-bottom: 4vw;}
+
+      .line6 {
+        width: 33.33%;}
+
+      .youtube-video {
+        width: 100%;
+        aspect-ratio: 16 / 9;}
+
+      .slim-youtube-video {
+        width: 100%;
+        height: 23.66vw;}
+
+    .footer-contact {
+      font-size: 1vw;}
+
+
+
+  /*Lightbox*/
+
+    * {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;}
+      
+    #container {
+      max-width: 100%;}
+    
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 4vw;
+      padding-right: 4vw;
+      align-items: top;}
+    
+    .image-gallery img {
+      max-width: 27.3vw;
       padding-bottom: 4vw;}
 
-    .line6 {
-      width: 33.33%;}
-
-    .youtube-video {
-      width: 100%;
-      aspect-ratio: 16 / 9;}
-
-    .slim-youtube-video {
-      width: 100%;
-      height: 23.66vw;}
-
-  .footer-contact {
-    font-size: 1vw;}
 
 
+/*Phone Version*/
 
-/*Lightbox*/
+  /*Hidding mechanism*/
 
-  * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;}
+    .phone {
+      display: none;}
+
+    @media screen and (max-width: 500px) {
+      .desktop {
+        display: none;}
+      
+      .phone {
+        display: block;}}
+
+
+
+  /*About Me*/
+
+    .p-h1 {
+      font-size: 20vw;
+      margin-top: 10vw;
+      margin-left: 10vw;}
+
+    .p-bio {
+      width: 150vw;
+      margin-top: 10vw;
+      margin-left: 10vw;}
+
+    .p-copy {
+      font-size: 10vw;}
+/*
+
+      .p-skills {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 15vw;
+        margin-bottom: 40vw;}
     
-  #container {
-    max-width: 100%;}
+      .p-skill-icon {
+        background-color: white;
+        position: relative;
+        width: 25vw;
+        height: 25vw;
+        margin: auto;}
+      
+      .p-skill-icon:hover {
+        background-color: green;}
+      
+      .p-skill-icon .skill-icon-text {
+        visibility: hidden;
+        width: 1000vw;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        font-family: "Montserrat Medium";
+        font-size: 10vw;
+        color: black;
+        text-align: start;
+        opacity: 0%;
+        transition: 0.3s;}
+      
+      .p-skill-icon:hover .skill-icon-text {
+        visibility: visible;
+        opacity: 100%;
+        transition: opacity 0.5s;}
+*/
+
+
+  /*Contact*/
+
+    .p-contact {
+      text-align: center;
+      margin-top: 30vw;
+      margin-bottom: 30vw;}
   
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    align-items: top;}
+    .p-contact-info {
+      font-size: 12vw;}
+
+    .p-social-media-container{
+      display: flex;
+      flex-flow: row wrap;
+      margin-left: 35vw;
+      margin-right: 35vw;}
   
-  .image-gallery img {
-    max-width: 27.3vw;
-    padding-bottom: 4vw;}
+    .p-social-media {
+      background-color: white;
+      width: 25vw;
+      height: 25vw;
+      margin: auto;}
+  
+    .p-social-media:hover {
+      background-color: green;}
+
+
+
+  /*Footer*/
+
+    .p-footer {
+      font-size: 10vw;
+      margin-bottom: 5vw;
+      margin-top: 5vw;}
