@@ -1,7 +1,8 @@
 /*Hidding mechanism*/
 
   .phone {
-    display: none;}
+    display: none;
+    }
 
   @media screen and (orientation: portrait) {
     .desktop {
@@ -407,29 +408,41 @@
 
   /*About Me*/
 
-    .p-opening {
-      margin-left: 8vw;
-      margin-right: 8vw;}
+  .p-opening{
+    text-align: center;}
 
+  .p-square {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+  }
+
+  .p-container {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+  }
+
+    .p-waiting-chango {
+      margin: auto;
+      margin-top: 20vw;
+      width: 60vw;}
 
     .p-h1 {
       font-size: 8vw;
-      margin-left: 8vw;
-      margin-right: 8vw;}
-
-    .p-bio {
-      margin-top: 5vw;
-      margin-left: 8vw;
-      margin-right: 8vw;
-      margin-bottom: 5vw;}
+      margin-bottom: 20vw;}
 
     .p-copy {
-      font-size: 4vw;}
+      font-size: 2vw;
+      margin-left: 8vw;
+      margin-right: 8vw;
+      margin-bottom: 20vw;}
 
     .p-skills {
       display: flex;
-      flex-flow: row wrap;
-      margin-top: 12vw;}
+      flex-flow: row wrap;}
     
       #p-adobeskills-button {
         background-color: green;
@@ -470,23 +483,19 @@
       height: 30vw;}
   
       #adobecopy {
-        font-size: 4vw;
-        transition: all 200ms;}
+        font-size: 4vw;}
 
       #copywritingcopy {
         font-size: 4vw;
-        display: none;
-        transition: all 200ms;}
+        display: none;}
 
       #photographycopy {
         font-size: 4vw;
-        display: none;
-        transition: all 200ms;}
+        display: none;}
 
       #programingcopy {
         font-size: 4vw;
-        display: none;
-        transition: all 200ms;}
+        display: none;}
 
 
 
