@@ -407,14 +407,20 @@
 
   /*About Me*/
 
+    .p-opening {
+      margin-left: 8vw;
+      margin-right: 8vw;}
+
+
     .p-h1 {
       font-size: 8vw;
-      margin-left: 2vw;}
+      margin-left: 8vw;
+      margin-right: 8vw;}
 
     .p-bio {
-      width: 70%;
       margin-top: 5vw;
-      margin-left: 2vw;
+      margin-left: 8vw;
+      margin-right: 8vw;
       margin-bottom: 5vw;}
 
     .p-copy {
@@ -464,19 +470,23 @@
       height: 30vw;}
   
       #adobecopy {
-        font-size: 4vw;}
+        font-size: 4vw;
+        transition: all 200ms;}
 
       #copywritingcopy {
         font-size: 4vw;
-        display: none;}
+        display: none;
+        transition: all 200ms;}
 
       #photographycopy {
         font-size: 4vw;
-        display: none;}
+        display: none;
+        transition: all 200ms;}
 
       #programingcopy {
         font-size: 4vw;
-        display: none;}
+        display: none;
+        transition: all 200ms;}
 
 
 
