@@ -419,42 +419,65 @@
 
     .p-copy {
       font-size: 4vw;}
-/*
 
-      .p-skills {
-        display: flex;
-        flex-flow: row wrap;
-        margin-top: 15vw;
-        margin-bottom: 40vw;}
+    .p-skills {
+      display: flex;
+      flex-flow: row wrap;}
     
-      .p-skill-icon {
-        background-color: white;
+      #p-adobeskills-button {
+        background-color: green;
+        border: 0px;
         position: relative;
-        width: 25vw;
-        height: 25vw;
+        width: 10vw;
+        height: 10vw;
         margin: auto;}
-      
-      .p-skill-icon:hover {
-        background-color: green;}
-      
-      .p-skill-icon .skill-icon-text {
-        visibility: hidden;
-        width: 1000vw;
-        position: absolute;
-        z-index: 1;
-        bottom: 150%;
-        font-family: "Montserrat Medium";
-        font-size: 10vw;
-        color: black;
-        text-align: start;
-        opacity: 0%;
-        transition: 0.3s;}
-      
-      .p-skill-icon:hover .skill-icon-text {
-        visibility: visible;
-        opacity: 100%;
-        transition: opacity 0.5s;}
-*/
+
+      #p-copywritingskills-button {
+        background-color: white;
+        border: 0px;
+        position: relative;
+        width: 10vw;
+        height: 10vw;
+        margin: auto;}
+
+      #p-photographyskills-button {
+        background-color: white;
+        border: 0px;
+        position: relative;
+        width: 10vw;
+        height: 10vw;
+        margin: auto;}
+
+      #p-programingskills-button {
+        background-color: white;
+        border: 0px;
+        position: relative;
+        width: 10vw;
+        height: 10vw;
+        margin: auto;}
+
+    .p-skills-copy {
+      margin-left: 2vw;
+      margin-right: 2vw;
+      margin-top: 3vw;
+      margin-bottom: 9vw;}
+  
+      #adobecopy {
+        font-size: 3vw;}
+
+      #copywritingcopy {
+        font-size: 3vw;
+        display: none;}
+
+      #photographycopy {
+        font-size: 3vw;
+        display: none;}
+
+      #programingcopy {
+        font-size: 3vw;
+        display: none;}
+
+
 
   /*Portfolio*/
 

@@ -270,25 +270,75 @@
 							I'm always looking for new challenges that take me out of my comfort zone, because having nothing to do kills me with boredom.
 						</p>
 					</div>
-					<!--
 					<div class="p-skills">
-						<div class="p-skill-icon">
-								<img src="Resources/About/Skills/adobe-skills.png" alt="The Adobe logo."/>
-									<span class="p-skill-icon-text">I am proficient in Photoshop, Camera Raw, Illustrator, Indesign, Premier and After Effects.</span>
-						</div>
-						<div class="p-skill-icon">
-								<img src="Resources/About/Skills/copywriting-skills.png" alt="A caligraphic pen icon."/>
-									<span class="p-skill-icon-text">My reading habits helped me develop an intuition for copywriting.</span>
-						</div>
-						<div class="p-skill-icon">
-								<img src="Resources/About/Skills/photography-skills.png" alt="A camera icon."/>
-									<span class="p-skill-icon-text">Photography allows me to tell stories in an instant, through a digital or analogue canvas.</span>
-						</div>
-						<div class="p-skill-icon">
-								<img src="Resources/About/Skills/programing-skills.png" alt="A coding icon."/>
-									<span class="p-skill-icon-text">I found so much creativity in coding that I had to try it myself, so I learnt HTML and CSS. Currently I'm learning Java.</span>
-						</div>
-					</div>-->
+						<button onclick="adobeskills()" id="p-adobeskills-button">
+							<img src="Resources/About/Skills/adobe-skills.png" alt="The Adobe logo."/>
+						</button>
+						<button onclick="copywritingskills()" id="p-copywritingskills-button">
+							<img src="Resources/About/Skills/copywriting-skills.png" alt="A caligraphic pen icon."/>
+						</button>
+						<button onclick="photographyskills()" id="p-photographyskills-button">
+							<img src="Resources/About/Skills/photography-skills.png" alt="A camera icon."/>
+						</button>
+						<button onclick="programingskills()" id="p-programingskills-button">
+							<img src="Resources/About/Skills/programing-skills.png" alt="A coding icon."/>
+						</button>
+					</div>
+					<div class="p-skills-copy">
+						<p id="adobecopy">
+							I am proficient in Photoshop, Camera Raw, Illustrator, Indesign, Premier and After Effects.
+						</p>
+						<p id="copywritingcopy">
+							My reading habits helped me develop an intuition for copywriting.<br><br>
+						</p>
+						<p id="photographycopy">
+							Photography allows me to tell stories in an instant, through a digital or analogue canvas.
+						</p>
+						<p id="programingcopy">
+							I found so much creativity in coding that I had to try it myself, so I learnt HTML and CSS. Currently I'm learning Java.
+						</p>
+					</div>
+					<script>
+						function adobeskills() {
+							document.getElementById('p-adobeskills-button').style.backgroundColor = 'green';
+							document.getElementById('p-copywritingskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-photographyskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-programingskills-button').style.backgroundColor = 'white';
+							document.getElementById('adobecopy').style.display = 'block';
+							document.getElementById('copywritingcopy').style.display = 'none';
+							document.getElementById('photographycopy').style.display = 'none';
+							document.getElementById('programingcopy').style.display = 'none';}
+
+						function copywritingskills() {
+							document.getElementById('p-adobeskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-copywritingskills-button').style.backgroundColor = 'green';
+							document.getElementById('p-photographyskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-programingskills-button').style.backgroundColor = 'white';
+							document.getElementById('adobecopy').style.display = 'none';
+							document.getElementById('copywritingcopy').style.display = 'block';
+							document.getElementById('photographycopy').style.display = 'none';
+							document.getElementById('programingcopy').style.display = 'none';}
+
+						function photographyskills() {
+							document.getElementById('p-adobeskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-copywritingskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-photographyskills-button').style.backgroundColor = 'green';
+							document.getElementById('p-programingskills-button').style.backgroundColor = 'white';
+							document.getElementById('adobecopy').style.display = 'none';
+							document.getElementById('copywritingcopy').style.display = 'none';
+							document.getElementById('photographycopy').style.display = 'block';
+							document.getElementById('programingcopy').style.display = 'none';}
+
+						function programingskills() {
+							document.getElementById('p-adobeskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-copywritingskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-photographyskills-button').style.backgroundColor = 'white';
+							document.getElementById('p-programingskills-button').style.backgroundColor = 'green';
+							document.getElementById('adobecopy').style.display = 'none';
+							document.getElementById('copywritingcopy').style.display = 'none';
+							document.getElementById('photographycopy').style.display = 'none';
+							document.getElementById('programingcopy').style.display = 'block';}
+					</script>
 			</section>
 <!--Portfolio-->
 			<section class="p-portfolio">
