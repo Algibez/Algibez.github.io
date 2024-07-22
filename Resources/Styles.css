@@ -607,35 +607,26 @@
   /*Portfolio pages*/
 
     .p-work-opening {
-      display: flex;
-      flex-flow: row wrap;
-      padding: 4vw;
-      justify-content: space-between;}
-
-      .p-titles-container {
-        width: 30%;}
+      padding: 4vw;}
 
       .p-campaign-name {
         font-size: 6vw;
-        padding-bottom: 4vw;}
+        padding-bottom: 1vw;}
 
       .p-date {
         color: grey;
         font-size: 4vw;
-        padding-bottom: 4vw;}
+        padding-bottom: 1vw;}
 
       .p-titles {
         font-size: 4vw;
-        padding-bottom: 4vw;}
-
-      .p-description-container {
-        width: 60%;
-        text-align: justify;
-        text-justify: inter-word;}
+        padding-bottom: 1vw;}
 
       .p-description {
         font-size: 4vw;
-      }
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        color: grey;}
 
     .p-work-body {
       display: flex;
@@ -681,4 +672,6 @@
         height: 50vw;}
 
     .p-footer-contact {
-      font-size: 3vw;}
+      font-size: 3vw;
+      padding-top: 4vw;
+      padding-bottom: 4vw;}
