@@ -628,6 +628,28 @@
         padding-bottom: 10vw;
         color: grey;}
 
+
+
+
+        .m-campaign-name {
+          font-size: 6vw;
+          padding-bottom: 3vw;}
+  
+        .m-titles {
+          font-size: 4vw;}
+
+          .m-back-button {
+            font-size: 4vw;
+            font-weight: 50;
+          }
+  
+        .m-description {
+          font-size: 3vw;
+          padding-top: 7vw;
+          padding-bottom: 10vw;
+          color: grey;}
+
+
     .p-work-body {
       display: flex;
       flex-flow: row wrap;
