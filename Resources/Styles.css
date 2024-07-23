@@ -630,6 +630,7 @@
 
 
 
+/*miscellany*/
 
         .m-campaign-name {
           font-size: 6vw;
@@ -638,56 +639,23 @@
         .m-titles {
           font-size: 4vw;}
 
-          .m-back-button {
-            font-size: 4vw;
-            font-weight: 50;
-          }
-  
+        .m-back-button {
+          font-size: 4vw;
+          font-weight: 50;}
+
         .m-description {
           font-size: 3vw;
           padding-top: 7vw;
-          padding-bottom: 10vw;
+          padding-bottom: 5vw;
           color: grey;}
 
-
-    .p-work-body {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      padding-left: 4vw;
-      padding-right: 4vw;}
-
-      .p-line1 {
-        width: 30%;
-        padding-bottom: 4vw;}
 
       .p-line2 {
         width: 100%;
         padding-bottom: 4vw;}
 
-    .p-work-body-fullscreen {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;}
-
-      .p-line3 {
-        width: 50%;}
-
       .p-line4 {
         width: 100%;}
-
-      .p-line5 {
-        width: 20%;
-        padding-left: 40%;
-        padding-right: 40%;
-        padding-bottom: 4vw;}
-
-      .p-line6 {
-        width: 33.33%;}
-
-      .p-slim-youtube-video {
-        width: 100%;
-        height: 50vw;}
 
     .p-footer-contact {
       font-size: 1.5vw;
